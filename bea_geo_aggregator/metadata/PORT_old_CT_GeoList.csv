@@ -1,0 +1,9 @@
+County name,County_GeoFips,GeoAgg1_name,GeoAgg1Fips,GeoAgg2_name,GeoAgg2Fips,GeoAgg3_name,GeoAgg3Fips
+"Fairfield, CT",09001,Connecticut (Metropolitan Portion),09998,New England (Metropolitan Portion),91998,United States (Metropolitan Portion),00998
+"Hartford, CT",09003,Connecticut (Metropolitan Portion),09998,New England (Metropolitan Portion),91998,United States (Metropolitan Portion),00998
+"Middlesex, CT",09007,Connecticut (Metropolitan Portion),09998,New England (Metropolitan Portion),91998,United States (Metropolitan Portion),00998
+"New Haven, CT",09009,Connecticut (Metropolitan Portion),09998,New England (Metropolitan Portion),91998,United States (Metropolitan Portion),00998
+"New London, CT",09011,Connecticut (Metropolitan Portion),09998,New England (Metropolitan Portion),91998,United States (Metropolitan Portion),00998
+"Tolland, CT",09013,Connecticut (Metropolitan Portion),09998,New England (Metropolitan Portion),91998,United States (Metropolitan Portion),00998
+"Windham, CT",09015,Connecticut (Metropolitan Portion),09998,New England (Metropolitan Portion),91998,United States (Metropolitan Portion),00998
+"Litchfield, CT",09005,Connecticut (Nonmetropolitan Portion),09999,New England (Nonmetropolitan Portion),91999,United States (Nonmetropolitan Portion),00999

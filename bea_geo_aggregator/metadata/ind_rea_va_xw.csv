@@ -1,0 +1,35 @@
+REA LineCode,REA Description,VA Description,REA Description indent
+1,All industry total,Gross domestic product,All industry total
+2,Private industries,Private industries,  Private industries
+3,"Agriculture, forestry, fishing and hunting","Agriculture, forestry, fishing, and hunting","    Agriculture, forestry, fishing and hunting"
+6,"Mining, quarrying, and oil and gas extraction",Mining,"    Mining, quarrying, and oil and gas extraction"
+10,Utilities,Utilities,    Utilities
+11,Construction,Construction,    Construction
+12,Manufacturing,Manufacturing,    Manufacturing
+13,Durable goods manufacturing,Durable goods,      Durable goods manufacturing
+25,Nondurable goods manufacturing,Nondurable goods,      Nondurable goods manufacturing
+34,Wholesale trade,Wholesale trade,    Wholesale trade
+35,Retail trade,Retail trade,    Retail trade
+36,Transportation and warehousing,Transportation and warehousing,    Transportation and warehousing
+45,Information,Information,    Information
+50,"Finance, insurance, real estate, rental, and leasing","Finance, insurance, real estate, rental, and leasing","    Finance, insurance, real estate, rental, and leasing"
+51,Finance and insurance,Finance and insurance,      Finance and insurance
+56,Real estate and rental and leasing,Real estate and rental and leasing,      Real estate and rental and leasing
+59,Professional and business services,Professional and business services,    Professional and business services
+60,"Professional, scientific, and technical services","Professional, scientific, and technical services","      Professional, scientific, and technical services"
+64,Management of companies and enterprises,Management of companies and enterprises,      Management of companies and enterprises
+65,Administrative and support and waste management and remediation services,Administrative and waste management services,      Administrative and support and waste management and remediation services
+68,"Educational services, health care, and social assistance","Educational services, health care, and social assistance","    Educational services, health care, and social assistance"
+69,Educational services,Educational services,      Educational services
+70,Health care and social assistance,Health care and social assistance,      Health care and social assistance
+75,"Arts, entertainment, recreation, accommodation, and food services","Arts, entertainment, recreation, accommodation, and food services","    Arts, entertainment, recreation, accommodation, and food services"
+76,"Arts, entertainment, and recreation","Arts, entertainment, and recreation","      Arts, entertainment, and recreation"
+79,Accommodation and food services,Accommodation and food services,      Accommodation and food services
+82,Other services (except government and government enterprises),"Other services, except government",    Other services (except government and government enterprises)
+83,Government and government enterprises,Government,Government and government enterprises
+87,Natural resources and mining,,Natural resources and mining
+88,Trade,,Trade
+89,Transportation and utilities,,Transportation and utilities
+90,Manufacturing and information,,Manufacturing and information
+91,Private goods-producing industries,Private goods-producing industries,Private goods-producing industries
+92,Private services-providing industries,Private services-producing industries,Private services-providing industries
