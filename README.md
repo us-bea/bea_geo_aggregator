@@ -3,7 +3,7 @@ BEA first [announced](https://www.bea.gov/information-updates-national-regional-
 
 These "geographic aggregates" may be useful for some users. We present here a way to derive, in some cases, approximations using the still available county estimates and national industry-level price estimates. These estimates will be of lesser quality than those produced internally at BEA for several reasons: the published industry price and GDP data are less detailed than is used internally, the public county data for current dollar GDP contains suppressions, we don't handle cases where non-standard price indexing fails, and using published data introduces rounding at an intermediate stage of calculation. If one only needs statistics prior to 2024, then the BEA’s [historical archive](https://apps.bea.gov/histdata/) is likely superior (though note that it will not receive revisions to national prices by industry). We do not recommend mixing estimates from the historical archive and this tool as that could create discontinuities at the ‘seam’ between the two sources. Finally, we note that this tool can be used for (a) user-defined geographic aggregates, and (b) estimates for some pre-defined geographic aggregates that had not been available for some BEA tables (not all tables included all aggregates). 
 
-This repository provides Python-based tools to calculate these estimates. There is also an accompanying whitepaper to details the methodology.
+This repository provides Python-based tools to calculate these estimates. There is also an accompanying [technical document](https://www.bea.gov/sites/default/files/2026-02/geo-aggregator-technical-document.pdf) that details the methodology.
 
 ## How to run
 The tools are comprised two python-based Jupyter notebook interfaces depending on your need: `Geo_Aggregator_simple` for straight-foward cases of looking at single geographic aggregations, and `Geo_Aggregator_full` that shows a few more options. We provide variants that can used in cloud-based notebook environments (e.g., Google Colab) that alleviate the need for a local installation of Python, as well at variants designed to be run locally.
@@ -41,7 +41,7 @@ Why are some estimates for geographic aggregates (e.g., MSA) missing?
     - ratio lines: either the numerator is missing or the denominator is either missing or zero.
 
 ## How to get help
-For methodological question, please first consult the whitepaper. Please contact reis@bea.gov.
+For methodological question, please first consult the [technical document](https://www.bea.gov/sites/default/files/2026-02/geo-aggregator-technical-document.pdf). If that is not sufficient, please contact reis@bea.gov.
 
 ## Quick Links
 * [CODE_OF_CONDUCT.md](https://github.com/us-bea/.github/blob/main/CODE_OF_CONDUCT.md)
