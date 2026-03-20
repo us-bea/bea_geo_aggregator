@@ -15,4 +15,4 @@ from .REA_utils import (
     CAINC_tables,
 )
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'

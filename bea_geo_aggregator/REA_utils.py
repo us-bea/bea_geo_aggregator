@@ -124,6 +124,8 @@ def gdp_combine_cnty_nominals_geoagg_measures(df_agg, df=None, geofips_filter=No
        geofips_filter = df_agg.GeoAggFips.iloc[0]
     if df is not None: # (b)
         #df_prices = df[df.GeoFips==df.GeoFips.iloc[0]][['LineCode', 'TimePeriod', 'price']]
+        dupe_names = df.duplicated(subset=['GeoName', 'LineCode', 'TimePeriod'], keep=False)
+        df.loc[dupe_names, 'GeoName'] = df['GeoName'] + " (" + df['GeoFips'] + ")"
         if 'GeoAgg1Fips' in df.columns:
             df = df[df.GeoAgg1Fips==geofips_filter].copy()
         if 'GeoName' in df.columns:
@@ -136,6 +138,8 @@ def gdp_combine_cnty_nominals_geoagg_measures(df_agg, df=None, geofips_filter=No
         start_year, last_year = df_agg.TimePeriod.min(), df_agg.TimePeriod.max()
         nominals, prices, industries, ref_year = pull_source_data_gdp(start_year, last_year, bea_key, geofips_filter=geofips_filter,
                                                                   geo_agg=geo_agg, verbosity=verbosity)
+        dupe_names = nominals.duplicated(subset=['GeoName', 'Code', 'TimePeriod'], keep=False)
+        nominals.loc[dupe_names, 'GeoName'] = nominals['GeoName'] + " (" + nominals['GeoFips'] + ")"
         nominals = make_nullcomment_NA_if_available(nominals)
         nominals = nominals.drop(columns=['CL_UNIT', 'UNIT_MULT', 'NoteRef'])
         df, ind_rea_va_xw = combine_nominals_prices(nominals, prices, industries)
@@ -1223,6 +1227,8 @@ def pi_combine_cnty_geoagg_calc(df_agg, df=None, geofips_filter=None, geo_agg="M
     if geofips_filter is None: #can only handle 1 geoagg
        geofips_filter = df_agg.GeoAggFips.iloc[0]
     if df is not None: # (b)
+        dupe_names = df.duplicated(subset=['GeoName', 'LineCode', 'TimePeriod'], keep=False)
+        df.loc[dupe_names, 'GeoName'] = df['GeoName'] + " (" + df['GeoFips'] + ")"
         if 'GeoAgg1Fips' in df.columns:
             df = df[df.GeoAgg1Fips==geofips_filter].copy()
         if 'GeoName' in df.columns:
@@ -1234,6 +1240,8 @@ def pi_combine_cnty_geoagg_calc(df_agg, df=None, geofips_filter=None, geo_agg="M
         tablename = df_agg['Code'].iloc[0].split("-")[0]
         df, line_codes = pull_source_data_pi(start_year, last_year, bea_key, tablename, geofips_filter=geofips_filter,
                                                                   geo_agg=geo_agg, verbosity=verbosity)
+        dupe_names = df.duplicated(subset=['GeoName', 'Code', 'TimePeriod'], keep=False)
+        df.loc[dupe_names, 'GeoName'] = df['GeoName'] + " (" + df['GeoFips'] + ")"
         df = make_nullcomment_NA_if_available(df)
         df = df.drop(columns=['CL_UNIT', 'UNIT_MULT', 'NoteRef'])
         df["LineCode"] = df['Code'].str.slice(len(tablename)+1)
